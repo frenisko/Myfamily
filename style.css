@@ -1,469 +1,220 @@
+header img{
+    width: 7%;
+    position: relative;
+    top: -30%;
+    left: 12%;
+}
+a{
+  text-decoration: none;
+}
+dir#header{
+    margin: 0px;
+    position: relative;
+    left: 55%;
+    bottom: 60px;
+    display: inline;
+}
 body{
-    background-color: rgb(222, 222, 222);
+    margin: 0px;
 }
-a {
-    color: rgb(110, 113, 117);
-    transition: 0.5s;
-    font-size: 32px;
-    margin: 12px;
+dir#header a {
     text-decoration: none;
-    position: relative;
-    top: -10px;
-    right: 200px;
-    font-size: 30px;
-
+    color: rgb(183, 227, 206);
+    font-size: 140%;
+    font-family: "South Park";
+    /* display: inline; */
+    margin-right: 15px;
+    transition: 70ms;
 }
-a:hover{
-    color: rgb(179, 182, 184);
-    transition: 0.5s;
+dir#header a:hover{
+    color: rgb(232, 249, 240);
+    transition: 70ms;
 }
-a:active{
-    color: rgb(217, 176, 13);
-    transition: 0.2s;
+dir#header a:active{
+    color: rgb(232, 249, 240);
+    transition: 70ms;
 }
-section{
-    font-family: fantasy;
-    background-color: rgb(37, 33, 33);
-    text-align: right;
-    font-size: 70px;
-    border-radius: 15px;
-    position: fixed;
+dir#header a.main{
+    color: rgb(77, 108, 93);
+}
+body{
+    background-image: url(i.png);
+}
+header{
+    background-color: rgba(14, 14, 14, 0.77);
+    height: 70px;
+    width: 100vw;
     top: 0px;
-    width: 1470px;
-    right: 0px;
-    left: 1px;
-} 
-#img-p{
+    z-index: 99999;
+    /* padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 30px; */
+    position: fixed;
+}
+#main {
     position: relative;
-    right: 825px; 
-    top: -20px;
-    font-size: 20px;
-    color: rgb(110, 113, 117);
+    left: 1000px; /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 600ms; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        left: 1000px;
+        opacity: 0;
+      }
+      60% {
+          left: 50px;
+      }
+      80%{
+          opacity: 1;
+      }
+      100% {
+        left: 1px;
+      }
+  }
+#aboutMe {
+    position: relative;
+    left: 1000px; /* начальное значение непрозрачности */
+    animation: fadeIn1 ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 750ms; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn1 {
+    0% {
+        left: 1000px;
+        opacity: 0;
+      }
+      60% {
+          left: 50px;
+      }
+      80%{
+          opacity: 1;
+      }
+      100% {
+        left: 1px;
+      }
+  }
+  #contacts {
+    position: relative;
+    left: 1000px; /* начальное значение непрозрачности */
+    animation: fadeIn2 ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 900ms; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn2 {
+    0% {
+      left: 1000px;
+      opacity: 0;
+    }
+    60% {
+        left: 50px;
+    }
+    80%{
+        opacity: 1;
+    }
+    100% {
+      left: 1px;
+    }
+  }
+  #img-header {
+    right: 1000px; /* начальное значение непрозрачности */
+    animation: fadeIn3 ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 900ms; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn3 {
+    0% {
+      right: 1000px;
+      opacity: 0;
+    }
+    60% {
+        right: 50px;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+        right: 1px;
+    }
+  }
+dir#port {
+    /* display: inline; */
+    background-color: rgb(60, 60, 60);
+    width: 75%;
+    height: 380px;
+    position: relative;
+    left: 12%;
+    opacity: 85%;
+    top: 100px;
+    border-radius: 8px;
+}
+dir#contacts1 h1{
+    color: rgb(183, 227, 206);
+    font-size: 250%;
+    font-family: "South Park";
+    position: relative;
+    left: 35%;
+    top: 40px;
+    display: inline;
+}
+dir#main1 h1{
+    color: rgb(183, 227, 206);
+    font-size: 250%;
+    font-family: "South Park";
+    position: relative;
+    left: 32%;
+    top: 40px;
+    display: inline;
+}
+dir#aboutMe1 h1{
+    color: rgb(183, 227, 206);
+    font-size: 250%;
+    font-family: "South Park";
+    position: relative;
+    left: 410px;
+    top: 40px;
+    display: inline;
+}
+dir.port p{
+    font-size: 25px;
+    color: rgb(183, 227, 206);
+    position: relative;
+    top: 45px;
+    width: 700px;
+    left: 160px
 
 }
-#img1{
-    width: 70px; 
+dir.port {
     position: relative;
-    right: 970px;
-    top: 7px;
+    opacity: 0; /* начальное значение непрозрачности */
+    animation: fadeIn6 ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 900ms; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn6 {
+    0% {
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+dir p img{
+  width: 50px;
+  position: relative;
+  top: 19px;
 }
-.img-a{
-    width: 40px;
+a#inst{
+  position: relative;
+  bottom: 13px;
 }
-#myfam{
-    position: relative;
-    top: 50px;
-    height: 1095px;
-}
-.myfam-h{
-    font-size: 40px;
-    text-align: center;
-    color: rgb(55, 55, 55);
-    position: relative;
-    top:10px;
-    font-family: cursive;
-}
-#mysis1{
-    width: 725px;
-    background-color: rgb(143, 143, 143);
-    right: 5px;
-    height: 500px;
-}
-#mysis{
-    width: 730px;
-    position: relative;
-    left: 730px;
-    top: -524.5px;
-    background-color: rgb(211, 167, 5);
-    height: 500px;
-
-}
-.my-h{
-    font-family: cursive;
-    font-size: 30px ;
-    text-align: center;
-    color: rgb(55, 55, 55);
-}
-#mydad{
-    width: 725px;
-    right: 5px;
-    height: 500px;
-    background-color: rgb(211, 167, 5);
-    position: relative;
-    top: -543px;
-    left: 0;
-}
-#mymom{
-    width: 730px;
-    position: relative;
-    left: 730px;
-    top: -1068px;
-    height: 500px;
-    background-color: rgb(143, 143, 143);
-
-}
-.myimg{
-    width: 200px;
-    position: relative;
-    left: 20px;
-}
-.mys{
-    width: 300px;
-    position: relative;
-    left: 20px;
-    top: 50px;
-}
-li{
-    font-family: cursive;
-    font-size: 30px ;
-    color: rgb(55, 55, 55);
-}
-#mysis1-ul{
-    position: relative;
-    left: 230px;
-    top: -200px;
-}
-#mysis-ul{
-    position: relative;
-    left: 315px;
-    top: -150px;
-}
-#mydad-ul{
-    position: relative;
-    left: 230px;
-    top: -300px;
-}
-#mymom-ul{
-    position: relative;
-    left: 315px;
-    top: -150px;
-}
-ul{
-    width: 325px;
-}
-@media screen and (max-width: 400px) {
-    #mydad{
-        width: 647px;
-        right: 5px;
-        height: 500px;
-        background-color: rgb(211, 167, 5);
-        position: relative;
-        top: -545.5px;
-        left: 0;
-    }
-    #mymom{
-        width: 650px;
-        position: relative;
-        left: 650px;
-        top: -1070px;
-        height: 500px;
-        background-color: rgb(143, 143, 143);
-    }
-    #mysis1{
-        width: 647px;
-        background-color: rgb(143, 143, 143);
-        right: 5px;
-        height: 500px;
-    }
-    #mysis{
-        width: 650px;
-        position: relative;
-        left: 650px;
-        top: -524.5px;
-        background-color: rgb(211, 167, 5);
-        height: 500px;
-    
-    }
-}
-@media screen and (max-width: 400px) {
-    body{
-        background-color: rgb(222, 222, 222);
-    }
-    a {
-        color: rgb(110, 113, 117);
-        transition: 0.5s;
-        margin:10px;
-        text-decoration: none;
-        position: relative;
-        top: -10px;
-        right: 5px;
-        font-size: 15px;
-    
-    }
-    a:hover{
-        color: rgb(179, 182, 184);
-        transition: 0.5s;
-    }
-    a:active{
-        color: rgb(217, 176, 13);
-        transition: 0.2s;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    } 
-    #img-p{
-        position: relative;
-        right: 0px; 
-        top: -10px;
-        font-size: 12px;
-        color: rgb(110, 113, 117);
-    
-    }
-    #img1{
-        width: 40px; 
-        position: relative;
-        right: 80px;
-        top: 5px;
-    }
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    .myfam-h{
-        font-size: 30px;
-        text-align: center;
-        color: rgb(55, 55, 55);
-        position: relative;
-        top:-30px;
-        font-family: cursive;
-    }
-    #mysis1{
-        width: 400px;
-        background-color: rgb(143, 143, 143);
-        right: 7.5px;
-        height: 230px;
-        position: relative;
-        top: -30px;
-    }
-    #mysis{
-        width: 400px;
-        position: relative;
-        left: -7.5px;
-        top: -47px;
-        background-color: rgb(211, 167, 5);
-        height: 230px;
-    
-    }
-    .my-h{
-        font-family: cursive;
-        font-size: 20px ;
-        text-align: center;
-        color: rgb(55, 55, 55);
-    }
-    #mydad{
-        width: 401px;
-        /* right: 5px; */
-        height: 250px;
-        background-color: rgb(211, 167, 5);
-        position: relative;
-        top: 165px;
-        left: -8px;
-    }
-    #mymom{
-        width: 401px;
-        position: relative;
-        left: -8px;
-        top: -331px;
-        height: 230px;
-        background-color: rgb(143, 143, 143);
-    
-    }
-    .myimg{
-        width: 110px;
-        position: relative;
-        left: 10px;
-        top: -10px;
-    }
-    .mys{
-        width: 170px;
-        position: relative;
-        left: 5px;
-        top: 15px;
-    }
-    li{
-        font-family: cursive;
-        font-size: 15px ;
-        color: rgb(55, 55, 55);
-    }
-    #mysis1-ul{
-        position: relative;
-        left: 120px;
-        top: -160px;
-    }
-    #mysis-ul{
-        position: relative;
-        left: 159px;
-        top: -100px;
-    }
-    #mydad-ul{
-        position: relative;
-        left: 110px;
-        top: -170px;
-    }
-    #mymom-ul{
-        position: relative;
-        left: 160px;
-        top: -100px;
-    }
-    ul{
-        width: 170px;
-    }
-}
-@media screen and (max-width: 380px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
-}
-@media screen and (max-width: 370px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
-}
-@media screen and (max-width: 375px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
-}
-@media screen and (max-width: 360px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
-}
-@media screen and (max-width: 350px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
-}
-@media screen and (max-width: 340px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
-}@media screen and (max-width: 420px){
-    #myfam{
-        height: 310px;
-        position: relative;
-        top: 80px;
-        width: 100%;
-    }
-    section{
-        font-family: fantasy;
-        background-color: rgb(37, 33, 33);
-        text-align: right;
-        font-size: 10px;
-        border-radius: 5px;
-        position: fixed;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        right: 0px;
-        left: 0px;
-    }
+@font-face {
+    font-family: "South Park";
+    src: url(SouthPark.otf);
 }
